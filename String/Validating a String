@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char A[]="Kartikeya45";
+    char B[]="Kartikeya__45";
+    int k=0,l=0;
+    cout<<"Given String 1 :"<<A<<endl;
+    cout<<"Given String 2 :"<<B<<endl;
+    for (int i=0;A[i]!='\0';i++)
+    {
+        if(!(A[i]>=65 && A[i]<=90)&& !(A[i]>=97 && A[i]<=122) && !(A[i]>=48 && A[i]<=57))
+            k=1;
+    }
+    
+     for (int i=0;B[i]!='\0';i++)
+    {
+        if(!(B[i]>=65 && B[i]<=90)&& !(B[i]>=97 && B[i]<=122) && !(B[i]>=48 && B[i]<=57))
+            l=1;
+    }
+    if(k==0)
+        cout<<"Given String 1 is a Validate String"<<endl;
+    else
+        cout<<"Given String 1 is not a Validate String"<<endl;
+        
+    if(l==0)
+        cout<<"Given String  2 is a Validate String"<<endl;
+    else
+        cout<<"Given String 2 is not a Validate String"<<endl;
+    
+    return 0;
+}

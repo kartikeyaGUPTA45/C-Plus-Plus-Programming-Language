@@ -8,6 +8,8 @@ int main()
     
     
     //empty():This method can be used to check whether the array is empty or not
+    //0: means array is not empty
+    //1: means array is empty
     cout<<array1.empty()<<endl;	
 
     

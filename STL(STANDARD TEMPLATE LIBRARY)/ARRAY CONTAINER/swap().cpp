@@ -1,5 +1,5 @@
 #include<iostream>
-#include<tuple>
+#include<array>
 using namespace std;
 
 int main()

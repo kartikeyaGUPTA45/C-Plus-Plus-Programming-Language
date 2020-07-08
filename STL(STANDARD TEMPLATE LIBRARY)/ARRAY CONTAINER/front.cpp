@@ -1,5 +1,5 @@
 #include<iostream>
-#include<tuple>
+#include<array>
 using namespace std;
 
 int main()
@@ -8,7 +8,5 @@ int main()
     // front():This method returns the first element in the array
     cout<<array1.front()<<endl;
 
-    
-    
     return 0;
 }

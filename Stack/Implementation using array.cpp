@@ -45,7 +45,7 @@ int stackTop(struct stack st)
 void push(struct stack *st,int x)
 {
     if(st->top==st->size-1)
-        cout<<"Stack is Overflow";
+        cout<<"Stack is full";
     else
     {
         st->top++;

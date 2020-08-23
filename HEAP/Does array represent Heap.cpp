@@ -11,14 +11,26 @@ int main() {
         cin>>n;
         int a[n];
         int flag=0;
-        for(int i=1;i<=n;i++)
+        for(int i=0;i<n;i++)
             cin>>a[i];
-        for(int i=1;i<=n;i++)
+        int middle=n/2;
+        for(int i=0;i<middle;i++)
         {
-            if((a[i]<a[i*2] && a[i]<a[i*2+1])
+            if(2*i+1<n && 2*i+2<n)
             {
-                flag=1;
-                break;
+                if(a[2*i+1]>a[i] || a[2*i+2]>a[i])
+                {
+                    flag=1;
+                    break;
+                }
+            }
+            else if(2*i+1<n)
+            {
+                if(a[2*i+1]>a[i])
+                {
+                    flag=1;
+                    break;
+                }
             }
 
         }

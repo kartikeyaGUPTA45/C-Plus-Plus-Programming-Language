@@ -10,6 +10,6 @@ int main() {
 	 for(int i=0;i<n;i++)
        cin>>a[i];
 	int x=log2(n);
-	cout<<x<<endl;
+	cout<<"Height of Heap is:"<<x<<endl;
 	return 0;
 }
